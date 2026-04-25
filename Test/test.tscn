@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://busue7rr2oned"]
 
-[ext_resource type="PackedScene" uid="uid://dlh5p814gyhw8" path="res://gregalva.tscn" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://dlh5p814gyhw8" path="res://Test/gregalva.tscn" id="1_37kl0"]
 
 [node name="escenario" type="Node2D" unique_id=182130497]
 
