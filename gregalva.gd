@@ -1,14 +1,9 @@
 extends CharacterBody2D
 
-var text := 12
+var input : Vector2
+var speed := 1000
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	print(text)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		#text = "hola"
-		print(text)
+func _physics_process(delta: float) -> void:
+	input = Input.get_vector("left","right","up","down")
+	velocity = velocity.lerp(input*speed,delta * 10)
+	move_and_slide()
