@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dlh5p814gyhw8"]
+
+[ext_resource type="Script" uid="uid://cd3mrhv5euptx" path="res://gregalva.gd" id="1_krd6x"]
+[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="1_oarwq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j100u"]
+
+[node name="gregalva" type="CharacterBody2D" unique_id=1463111136]
+script = ExtResource("1_krd6x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=157163418]
+shape = SubResource("CircleShape2D_j100u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1268546712]
+top_level = true
+texture = ExtResource("1_oarwq")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1405718751]
