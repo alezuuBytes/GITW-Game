@@ -20,6 +20,10 @@ config/icon="res://Test/icon.svg"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 
+[layer_names]
+
+2d_physics/layer_1="coliciones"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
