@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b4kd7ddy7hdqy"]
+
+[ext_resource type="Script" uid="uid://d18erlambulql" path="res://trabajo_graso/menu/menu.gd" id="1_66may"]
+[ext_resource type="Theme" uid="uid://s7hava87ytwj" path="res://trabajo_graso/fonts/letras.tres" id="2_6mqy4"]
+
+[node name="menu" type="Node2D" unique_id=2083626950]
+script = ExtResource("1_66may")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1298747496]
+offset_left = -1.0
+offset_top = -176.0
+offset_right = 199.0
+offset_bottom = 9824.0
+color = Color(0.13682577, 0.13682574, 0.13682571, 1)
+
+[node name="controlador_de_botones" type="Control" parent="." unique_id=1229303848]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="jugar" type="Button" parent="controlador_de_botones" unique_id=1860072989]
+layout_mode = 1
+offset_left = 15.0
+offset_top = 362.0
+offset_right = 115.0
+offset_bottom = 412.0
+theme = ExtResource("2_6mqy4")
+text = "JUGAR"
+
+[node name="creditos" type="Button" parent="controlador_de_botones" unique_id=2042778277]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 423.0
+offset_right = 170.0
+offset_bottom = 473.0
+theme = ExtResource("2_6mqy4")
+text = "CREDITOS"
+
+[node name="salir" type="Button" parent="controlador_de_botones" unique_id=1914060233]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 22.0
+offset_top = 498.0
+offset_right = 111.0
+offset_bottom = 548.0
+grow_horizontal = 2
+theme = ExtResource("2_6mqy4")
+text = "SALIR"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="controlador_de_botones" unique_id=388524371]
+layout_mode = 0
+offset_right = 348.0
+offset_bottom = 158.0
+
+[connection signal="pressed" from="controlador_de_botones/jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="controlador_de_botones/creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="controlador_de_botones/salir" to="." method="_on_salir_pressed"]
