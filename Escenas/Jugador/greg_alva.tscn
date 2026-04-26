@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c1aruwsx123rh"]
+
+[ext_resource type="Texture2D" uid="uid://bdgcv4h3dbair" path="res://placeholder/sprites/Characters/Basic Charakter Spritesheet.png" id="1_4v2ed"]
+[ext_resource type="Script" uid="uid://b4jrqrfs60n46" path="res://scripts/gregalva.gd" id="1_ifuql"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifuql"]
+atlas = ExtResource("1_4v2ed")
+region = Rect2(17.129822, 15.857504, 14.363518, 16.75744)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cu18b"]
+radius = 4.1231055
+
+[node name="GregAlva" type="CharacterBody2D" unique_id=138358149]
+script = ExtResource("1_ifuql")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1500527842]
+texture = SubResource("AtlasTexture_ifuql")
+offset = Vector2(0, -5.7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=930062908]
+shape = SubResource("CircleShape2D_cu18b")

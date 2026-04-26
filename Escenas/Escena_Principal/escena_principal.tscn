@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bpcx2f2yvrvtk"]
+
+[ext_resource type="PackedScene" uid="uid://c1aruwsx123rh" path="res://Escenas/Jugador/greg_alva.tscn" id="1_gcge2"]
+
+[node name="EscenaPrincipal" type="Node2D" unique_id=1409719044]
+
+[node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
+
+[node name="Camera2D" type="Camera2D" parent="GregAlva" unique_id=2097797403]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=797039769]
