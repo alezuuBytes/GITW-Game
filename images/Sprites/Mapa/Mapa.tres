@@ -1,11 +1,11 @@
 [gd_resource type="TileSet" format=3 uid="uid://83venqtf3nr"]
 
-[ext_resource type="Texture2D" uid="uid://beb84jrxh8hbq" path="res://images/Sprites/Place Holders Assets/Titleset_1.png" id="1_6x552"]
-[ext_resource type="Texture2D" uid="uid://bwmmahpn4f3dd" path="res://images/Sprites/Place Holders Assets/Resurrected RPG 1.1/PlantShadow.png" id="1_lg5o6"]
-[ext_resource type="Texture2D" uid="uid://cfya818oon1sf" path="res://images/Sprites/Place Holders Assets/assets_sheet.png" id="1_wau8a"]
-[ext_resource type="Texture2D" uid="uid://c03m3ouxfj2ey" path="res://images/Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Tilesets/Floors_Tiles.png" id="4_41d3b"]
-[ext_resource type="Texture2D" uid="uid://dea34jtfi0cpf" path="res://images/Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_02/Size_05.png" id="5_qld82"]
-[ext_resource type="Texture2D" uid="uid://bu6fap0rikr73" path="res://images/Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Tilesets/Dungeon_Tiles.png" id="6_qld82"]
+[ext_resource type="Texture2D" uid="uid://beb84jrxh8hbq" path="res://Sprites/Place Holders Assets/Titleset_1.png" id="1_6x552"]
+[ext_resource type="Texture2D" uid="uid://bwmmahpn4f3dd" path="res://Sprites/Place Holders Assets/Resurrected RPG 1.1/PlantShadow.png" id="1_lg5o6"]
+[ext_resource type="Texture2D" uid="uid://cfya818oon1sf" path="res://Sprites/Place Holders Assets/assets_sheet.png" id="1_wau8a"]
+[ext_resource type="Texture2D" uid="uid://c03m3ouxfj2ey" path="res://Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Tilesets/Floors_Tiles.png" id="4_41d3b"]
+[ext_resource type="Texture2D" uid="uid://dea34jtfi0cpf" path="res://Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_02/Size_05.png" id="5_qld82"]
+[ext_resource type="Texture2D" uid="uid://bu6fap0rikr73" path="res://Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Tilesets/Dungeon_Tiles.png" id="6_qld82"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7sqw7"]
 texture = ExtResource("1_6x552")

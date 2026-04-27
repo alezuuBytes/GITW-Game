@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ee4xo3w0nn7c"]
+
+[ext_resource type="PackedScene" path="res://Escenas/greg_alva.tscn" id="1_gcge2"]
+[ext_resource type="PackedScene" path="res://Escenas/Mapa_1.tscn" id="1_pboj7"]
+[ext_resource type="Script" uid="uid://di703apf7yvcl" path="res://scripts/camera_gregalva.gd" id="3_7xruv"]
+[ext_resource type="PackedScene" uid="uid://de4wkjtqlbky0" path="res://Escenas/enemigo_final.tscn" id="3_s6hsl"]
+[ext_resource type="Script" path="res://scripts/enemigo_final.gd" id="5_7xruv"]
+
+[node name="EscenaPrincipal" type="Node2D" unique_id=1409719044]
+position = Vector2(138, 1021)
+
+[node name="Mapa_1" parent="." unique_id=874014371 instance=ExtResource("1_pboj7")]
+
+[node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
+position = Vector2(130, 503)
+
+[node name="Camera2D" type="Camera2D" parent="GregAlva" unique_id=2097797403]
+top_level = true
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+script = ExtResource("3_7xruv")
+
+[node name="enemigo_final" parent="." unique_id=1346721901 node_paths=PackedStringArray("player") instance=ExtResource("3_s6hsl")]
+script = ExtResource("5_7xruv")
+player = NodePath("../GregAlva")
