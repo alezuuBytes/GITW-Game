@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bbjathr60jmj3"]
+
+[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://Test/icon.svg" id="1_1xib0"]
+[ext_resource type="Script" uid="uid://v5hnr8lfediq" path="res://trabajo_graso/personaje_test.gd" id="1_p6bov"]
+[ext_resource type="PackedScene" uid="uid://byemaiusqtpdi" path="res://trabajo_graso/enemigo_final/enemigo_final.tscn" id="2_3penl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3penl"]
+radius = 59.908264
+
+[node name="graso_test" type="Node2D" unique_id=2105646509]
+
+[node name="personaje_test" type="CharacterBody2D" parent="." unique_id=402513500]
+position = Vector2(708, 357)
+script = ExtResource("1_p6bov")
+
+[node name="Sprite2D" type="Sprite2D" parent="personaje_test" unique_id=1237576071]
+texture = ExtResource("1_1xib0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="personaje_test" unique_id=862328778]
+shape = SubResource("CircleShape2D_3penl")
+
+[node name="enemigo_final" parent="." unique_id=1346721901 node_paths=PackedStringArray("player") instance=ExtResource("2_3penl")]
+player = NodePath("../personaje_test")
