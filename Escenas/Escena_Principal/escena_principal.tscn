@@ -14,7 +14,7 @@ script = ExtResource("1_m55d6")
 [node name="Mapa_2" parent="." unique_id=555828685 instance=ExtResource("1_qpsp5")]
 
 [node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
-position = Vector2(-1573, -1774)
+position = Vector2(565, 486)
 
 [node name="Camera2D3" type="Camera2D" parent="GregAlva" unique_id=2097797403]
 top_level = true
