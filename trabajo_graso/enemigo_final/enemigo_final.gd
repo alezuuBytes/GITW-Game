@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name EnemigoFinal
 
-@export var speed := 200
+@export var speed := 300
 @export var accel := 9.5
 @export var player : CharacterBody2D = null
 

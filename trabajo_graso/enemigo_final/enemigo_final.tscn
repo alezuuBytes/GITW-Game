@@ -12,7 +12,7 @@ script = ExtResource("1_jp2dj")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=578003950]
 self_modulate = Color(0.9999998, 0.0877052, 0.2808523, 1)
 position = Vector2(9.536743e-07, 0)
-scale = Vector2(0.034367215, 0.030178305)
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_sh2el")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1077301139]

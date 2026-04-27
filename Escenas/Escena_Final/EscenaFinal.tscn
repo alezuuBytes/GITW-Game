@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://513tt3r6a07l"]
 
+[ext_resource type="PackedScene" uid="uid://dbxu1yxy5fxyb" path="res://Escenas/Mapas/mapa_2.tscn" id="1_1mu2u"]
+[ext_resource type="Script" uid="uid://doddx882bhywu" path="res://Escenas/Escena_Final/escena_final.gd" id="1_2hdtk"]
+[ext_resource type="PackedScene" uid="uid://c1aruwsx123rh" path="res://Escenas/Jugador/greg_alva.tscn" id="2_6gwht"]
+[ext_resource type="PackedScene" uid="uid://byemaiusqtpdi" path="res://trabajo_graso/enemigo_final/enemigo_final.tscn" id="3_6gwht"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdsuq"]
+size = Vector2(1308, 238)
+
 [node name="EscenaFinal" type="Node2D" unique_id=884633575]
+script = ExtResource("1_2hdtk")
+
+[node name="Mapa_2" parent="." unique_id=555828685 instance=ExtResource("1_1mu2u")]
+
+[node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("2_6gwht")]
+position = Vector2(-1695, -1780)
+
+[node name="enemigo_final" parent="." unique_id=1346721901 node_paths=PackedStringArray("player") instance=ExtResource("3_6gwht")]
+position = Vector2(-2112, -1780)
+player = NodePath("../GregAlva")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=253308890]
+position = Vector2(605, 517)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=578639046]
+shape = SubResource("RectangleShape2D_hdsuq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

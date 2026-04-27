@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bdgcv4h3dbair" path="res://placeholder/sprites/Characters/Basic Charakter Spritesheet.png" id="1_4v2ed"]
 [ext_resource type="Script" uid="uid://b4jrqrfs60n46" path="res://scripts/gregalva.gd" id="1_ifuql"]
+[ext_resource type="Script" uid="uid://di703apf7yvcl" path="res://scripts/camera_gregalva.gd" id="3_6j255"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ifuql"]
 atlas = ExtResource("1_4v2ed")
@@ -19,3 +20,10 @@ offset = Vector2(0, -5.7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=930062908]
 shape = SubResource("CircleShape2D_cu18b")
+
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=301168777]
+top_level = true
+position = Vector2(-1168, -1371)
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+script = ExtResource("3_6j255")
