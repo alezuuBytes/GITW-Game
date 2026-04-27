@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://de4wkjtqlbky0"]
+
+[ext_resource type="Script" uid="uid://neihqv3yaq34" path="res://trabajo_graso/enemigo_final/enemigo_final.gd" id="1_jp2dj"]
+[ext_resource type="Texture2D" uid="uid://j1ttytsv03w" path="res://images/Sprites/PlaceHolders/PERSONAJE JAM.png" id="2_sh2el"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sh2el"]
+
+[node name="enemigo_final" type="CharacterBody2D" unique_id=1346721901]
+script = ExtResource("1_jp2dj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=578003950]
+self_modulate = Color(0.9999998, 0.0877052, 0.2808523, 1)
+scale = Vector2(0.047851563, 0.047851563)
+texture = ExtResource("2_sh2el")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1077301139]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1785010210]
+shape = SubResource("CircleShape2D_sh2el")
+disabled = true
