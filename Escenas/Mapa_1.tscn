@@ -1,6 +1,6 @@
-[gd_scene format=4 uid="uid://dpucir07e7a8v"]
+[gd_scene format=4 uid="uid://cqfowt8e64i57"]
 
-[ext_resource type="TileSet" uid="uid://83venqtf3nr" path="res://Sprites/Mapa/Mapa.tres" id="1_0bf6u"]
+[ext_resource type="TileSet" uid="uid://83venqtf3nr" path="res://images/Sprites/Mapa/Mapa.tres" id="1_0bf6u"]
 
 [node name="Mapa_1" type="TileMapLayer" unique_id=874014371]
 tile_set = ExtResource("1_0bf6u")
