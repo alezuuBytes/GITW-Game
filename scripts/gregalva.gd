@@ -11,3 +11,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		speed = 200
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	body.modulate = Color.RED
