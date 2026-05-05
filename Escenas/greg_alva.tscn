@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://c1aruwsx123rh"]
+[gd_scene format=3 uid="uid://dmjj1duyjpi6y"]
 
 [ext_resource type="Texture2D" uid="uid://bdgcv4h3dbair" path="res://placeholder/sprites/Characters/Basic Charakter Spritesheet.png" id="1_4v2ed"]
 [ext_resource type="Script" uid="uid://b4jrqrfs60n46" path="res://scripts/gregalva.gd" id="1_ifuql"]
