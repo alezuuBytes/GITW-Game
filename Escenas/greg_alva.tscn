@@ -53,3 +53,12 @@ max_value = 0.0
 value = 200.0
 allow_greater = true
 allow_lesser = true
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=753774259]
+offset_left = 732.0
+offset_top = 9.0
+offset_right = 778.0
+offset_bottom = 40.0
+text = "ir a..."
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

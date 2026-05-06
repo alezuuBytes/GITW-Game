@@ -38,3 +38,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		globales.velocidad_personaje = velocity
 		globales.copiar_variables = true
 		get_tree().call_deferred("change_scene_to_file", "res://Escenas/EscenaFinal.tscn")
+
+
+func _on_button_pressed() -> void:
+	get_tree().call_deferred("change_scene_to_file", "res://Escenas/selector_de_nivel.tscn")

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cynj6fetf1xhj"]
+
+[ext_resource type="Script" uid="uid://bus7iyqtvmbpr" path="res://scripts/selector_de_niveles.gd" id="1_0thyo"]
+
+[node name="selector_de_nivel" type="CanvasLayer" unique_id=1016839472]
+script = ExtResource("1_0thyo")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=1733124738]
+offset_left = 228.0
+offset_top = 228.0
+offset_right = 578.0
+offset_bottom = 329.0
+
+[node name="1er_nivel" type="Button" parent="HBoxContainer" unique_id=1089148791]
+layout_mode = 2
+text = "primer nivel"
+
+[node name="2do_nivel" type="Button" parent="HBoxContainer" unique_id=1454672044]
+layout_mode = 2
+text = "segundo nivel"
+
+[node name="menu" type="Button" parent="HBoxContainer" unique_id=772123631]
+layout_mode = 2
+text = "menu principal"
