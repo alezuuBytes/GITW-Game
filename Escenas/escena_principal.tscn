@@ -3,8 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://dmjj1duyjpi6y" path="res://Escenas/greg_alva.tscn" id="1_gcge2"]
 [ext_resource type="PackedScene" uid="uid://cqfowt8e64i57" path="res://Escenas/Mapa_1.tscn" id="1_pboj7"]
 [ext_resource type="Script" uid="uid://di703apf7yvcl" path="res://scripts/camera_gregalva.gd" id="3_7xruv"]
-[ext_resource type="PackedScene" uid="uid://de4wkjtqlbky0" path="res://Escenas/enemigo_final.tscn" id="3_s6hsl"]
+[ext_resource type="PackedScene" uid="uid://byemaiusqtpdi" path="res://Escenas/enemigo_final.tscn" id="3_s6hsl"]
 [ext_resource type="Texture2D" uid="uid://bq2rw21o4sm6e" path="res://images/point_light.webp" id="4_7xruv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7xruv"]
+radius = 323.02478
 
 [node name="EscenaPrincipal" type="Node2D" unique_id=1409719044]
 
@@ -13,7 +16,7 @@
 [node name="CanvasModulate" type="CanvasModulate" parent="Mapa_1" unique_id=1246098546]
 
 [node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
-position = Vector2(130, 503)
+position = Vector2(162, 501)
 
 [node name="Camera2D" type="Camera2D" parent="GregAlva" unique_id=2097797403]
 top_level = true
@@ -27,3 +30,11 @@ texture = ExtResource("4_7xruv")
 
 [node name="enemigo_final" parent="." unique_id=1346721901 instance=ExtResource("3_s6hsl")]
 script = null
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1894299283]
+position = Vector2(-1800, -1766)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=599291070]
+shape = SubResource("CircleShape2D_7xruv")
+
+[connection signal="body_entered" from="Area2D" to="GregAlva" method="_on_area_2d_body_entered"]

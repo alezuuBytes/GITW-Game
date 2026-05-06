@@ -26,4 +26,30 @@ top_level = true
 position = Vector2(-1168, -1371)
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+rotation_smoothing_speed = 2.0
 script = ExtResource("3_6j255")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1841239648]
+
+[node name="hitbox_enable" type="CheckButton" parent="CanvasLayer" unique_id=2021991900]
+offset_right = 44.0
+offset_bottom = 24.0
+text = "hitbox_disable?"
+
+[node name="custom_speed_enable" type="CheckButton" parent="CanvasLayer" unique_id=2136606324]
+offset_top = 32.0
+offset_right = 167.0
+offset_bottom = 63.0
+text = "custom_speed_enable?"
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer" unique_id=1874773602]
+visible = false
+offset_left = 224.0
+offset_top = 30.0
+offset_right = 310.5
+offset_bottom = 61.0
+max_value = 0.0
+value = 200.0
+allow_greater = true
+allow_lesser = true

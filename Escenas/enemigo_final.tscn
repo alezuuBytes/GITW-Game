@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://byemaiusqtpdi"]
 
-[ext_resource type="Script" uid="uid://neihqv3yaq34" path="res://trabajo_graso/enemigo_final/enemigo_final.gd" id="1_jp2dj"]
-[ext_resource type="Texture2D" uid="uid://ka1jq41uy87y" path="res://Sprites/mounstro_a1.jpg" id="2_sh2el"]
+[ext_resource type="Script" uid="uid://neihqv3yaq34" path="res://scripts/enemigo_final.gd" id="1_jp2dj"]
+[ext_resource type="Texture2D" uid="uid://ka1jq41uy87y" path="res://images/Sprites/mounstro_a1.jpg" id="2_sh2el"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh2el"]
 size = Vector2(25.25, 31)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r6aqk"]
 
 [node name="enemigo_final" type="CharacterBody2D" unique_id=1346721901]
 script = ExtResource("1_jp2dj")
@@ -19,5 +21,9 @@ texture = ExtResource("2_sh2el")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1785010210]
 shape = SubResource("RectangleShape2D_sh2el")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2047234450]
+shape = SubResource("SegmentShape2D_r6aqk")
+disabled = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

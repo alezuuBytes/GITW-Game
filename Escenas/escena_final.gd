@@ -3,4 +3,4 @@ extends Node2D
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
-		get_tree().change_scene_to_file("res://trabajo_graso/ganar_juego.tscn")
+		get_tree().change_scene_to_file("res://scripts/ganar_juego.tscn")

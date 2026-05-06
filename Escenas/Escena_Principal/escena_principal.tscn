@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://bpcx2f2yvrvtk"]
 
-[ext_resource type="PackedScene" uid="uid://c1aruwsx123rh" path="res://Escenas/Jugador/greg_alva.tscn" id="1_gcge2"]
 [ext_resource type="Script" uid="uid://cd64pxo1c0udn" path="res://Escenas/Escena_Principal/escena_principal.gd" id="1_m55d6"]
-[ext_resource type="PackedScene" uid="uid://dbxu1yxy5fxyb" path="res://Escenas/Mapas/mapa_2.tscn" id="1_qpsp5"]
-[ext_resource type="Script" uid="uid://di703apf7yvcl" path="res://scripts/camera_gregalva.gd" id="3_v1ro4"]
+[ext_resource type="PackedScene" uid="uid://dbxu1yxy5fxyb" path="res://Escenas/mapa_2.tscn" id="1_qpsp5"]
+[ext_resource type="PackedScene" uid="uid://dmjj1duyjpi6y" path="res://Escenas/greg_alva.tscn" id="3_v1ro4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uttbe"]
 radius = 165.14842
@@ -13,20 +12,13 @@ script = ExtResource("1_m55d6")
 
 [node name="Mapa_2" parent="." unique_id=555828685 instance=ExtResource("1_qpsp5")]
 
-[node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
-position = Vector2(565, 486)
-
-[node name="Camera2D3" type="Camera2D" parent="GregAlva" unique_id=2097797403]
-top_level = true
-position = Vector2(-1495, -1784)
-zoom = Vector2(1.5, 1.5)
-position_smoothing_enabled = true
-script = ExtResource("3_v1ro4")
-
 [node name="Area2D" type="Area2D" parent="." unique_id=138537439]
 position = Vector2(-1789, -1755)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2129979454]
 shape = SubResource("CircleShape2D_uttbe")
+
+[node name="GregAlva2" parent="." unique_id=138358149 instance=ExtResource("3_v1ro4")]
+position = Vector2(565, 486)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

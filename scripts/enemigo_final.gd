@@ -17,4 +17,7 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "GregAlva":
-		get_tree().quit()
+		if globales.god_mode == true:
+			velocity = velocity.lerp(global_position.direction_to(-player.global_position),4)
+		else:
+			get_tree().quit()
