@@ -6,7 +6,6 @@ class_name EnemigoFinal
 @export var player : CharacterBody2D = null
 
 func _physics_process(delta: float) -> void:
-	
 	if player != null:
 		velocity = velocity.lerp(global_position.direction_to(player.global_position) * speed,delta * accel)
 	if velocity.x > 0:

@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dea34jtfi0cpf" path="res://images/Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Props/Static/Trees/Model_02/Size_05.png" id="5_qld82"]
 [ext_resource type="Texture2D" uid="uid://bu6fap0rikr73" path="res://images/Sprites/Place Holders Assets/Pixel Crawler - Free Pack/Environment/Tilesets/Dungeon_Tiles.png" id="6_qld82"]
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_w2kh6"]
+polygon = PackedVector2Array(-4.9387817, 71.691925, -4.6201477, 57.672165, 12.267288, 57.034904, 12.0505295, 72.12335)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7sqw7"]
 texture = ExtResource("1_6x552")
 0:0/size_in_atlas = Vector2i(2, 2)
@@ -15,7 +18,10 @@ texture = ExtResource("1_6x552")
 2:0/0 = 0
 6:0/size_in_atlas = Vector2i(6, 9)
 6:0/0 = 0
+6:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_w2kh6")
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.6642532, 58.309425, 12.267288, 57.9908, 12.267288, 72.01055, -3.9828873, 72.329185)
+6:0/0/physics_layer_0/polygon_0/one_way = true
+6:0/0/physics_layer_0/polygon_0/one_way_margin = 3.0
 0:8/size_in_atlas = Vector2i(4, 4)
 0:8/0 = 0
 4:1/size_in_atlas = Vector2i(2, 1)
