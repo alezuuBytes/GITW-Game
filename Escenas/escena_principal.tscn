@@ -14,6 +14,8 @@ radius = 323.02478
 [node name="Mapa_1" parent="." unique_id=874014371 instance=ExtResource("1_pboj7")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Mapa_1" unique_id=1246098546]
+visible = false
+color = Color(0.10747976, 0.10747973, 0.10747973, 1)
 
 [node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
 position = Vector2(162, 501)
@@ -26,6 +28,8 @@ script = ExtResource("3_7xruv")
 
 [node name="PointLight2D" type="PointLight2D" parent="GregAlva" unique_id=142041254]
 shadow_enabled = true
+shadow_filter = 2
+shadow_filter_smooth = 9.5
 texture = ExtResource("4_7xruv")
 
 [node name="enemigo_final" parent="." unique_id=1346721901 instance=ExtResource("3_s6hsl")]
