@@ -50,7 +50,6 @@ offset_top = 30.0
 offset_right = 310.5
 offset_bottom = 61.0
 max_value = 0.0
-value = 200.0
 allow_greater = true
 allow_lesser = true
 
@@ -60,5 +59,9 @@ offset_top = 9.0
 offset_right = 778.0
 offset_bottom = 40.0
 text = "ir a..."
+
+[node name="direction" type="Node2D" parent="." unique_id=117688819]
+
+[node name="Sprite2D" type="Sprite2D" parent="direction" unique_id=90316301]
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

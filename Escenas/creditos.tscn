@@ -2,10 +2,19 @@
 
 [ext_resource type="Texture2D" uid="uid://bx53sg8kqr0i3" path="res://images/Creadores/zoro.png" id="1_c05db"]
 [ext_resource type="Script" uid="uid://bn3sc7xs2mtgo" path="res://scripts/creditos.gd" id="1_txoeq"]
-[ext_resource type="Texture2D" uid="uid://c2phb2mx0uvb3" path="res://images/Creadores/alter.png" id="2_t7oqj"]
 [ext_resource type="Texture2D" uid="uid://b7ipc73blci3i" path="res://images/Creadores/bruno.png" id="3_esdcc"]
+[ext_resource type="Theme" uid="uid://s7hava87ytwj" path="res://fonts/letras.tres" id="3_nloxq"]
 [ext_resource type="Texture2D" uid="uid://c2idwn7hpx85b" path="res://images/Creadores/graso.png" id="4_txoeq"]
 [ext_resource type="Texture2D" uid="uid://bd7qqsk3rjku3" path="res://images/Creadores/negrogaymer.png" id="5_s54co"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7rl0q"]
+load_path = "res://.godot/imported/alter.png-fce6d7f87a9cd03c15fcebd638e20337.ctex"
+
+[sub_resource type="Theme" id="Theme_nloxq"]
+default_font_size = 100
+
+[sub_resource type="Theme" id="Theme_0wx7t"]
+default_font_size = 50
 
 [sub_resource type="Animation" id="Animation_txoeq"]
 length = 0.001
@@ -215,7 +224,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.0009999999, 0.3, 0.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-997.49994, 1302.5), Vector2(-325, 1302.5), Vector2(200, 1302.5), Vector2(100, 1302.5)]
+"values": [Vector2(-997.49994, 1302.5), Vector2(-325, 1302.5), Vector2(500, 1300), Vector2(380, 1302.5)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -296,10 +305,10 @@ tracks/11/path = NodePath("CheckButton:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.32, 0.34, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.33333334, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(2660, 50), Vector2(802.5, 62.5), Vector2(1405.0001, 65), Vector2(1275, 47.5)]
+"values": [Vector2(2660, 50), Vector2(1100, 47.5), Vector2(1200, 65)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5fn64"]
@@ -319,25 +328,80 @@ script = ExtResource("1_txoeq")
 position = Vector2(390, 160)
 texture = ExtResource("1_c05db")
 
+[node name="PanelContainer" type="PanelContainer" parent="jere" unique_id=1772993502]
+offset_left = 127.499985
+offset_top = -124.999985
+offset_right = 183.49998
+offset_bottom = -84.999985
+
+[node name="Label" type="Label" parent="jere/PanelContainer" unique_id=2084592593]
+layout_mode = 2
+theme = ExtResource("3_nloxq")
+text = "@ZERO"
+
 [node name="floriana" type="Sprite2D" parent="." unique_id=508351463]
 position = Vector2(385, 725)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_t7oqj")
+scale = Vector2(0.4, 0.4)
+texture = SubResource("CompressedTexture2D_7rl0q")
+
+[node name="PanelContainer" type="PanelContainer" parent="floriana" unique_id=1746937443]
+offset_left = 318.75
+offset_top = -318.75
+offset_right = 415.75
+offset_bottom = -276.75
+
+[node name="Label" type="Label" parent="floriana/PanelContainer" unique_id=671729174]
+layout_mode = 2
+theme = SubResource("Theme_nloxq")
+text = "@Alter"
 
 [node name="bruno" type="Sprite2D" parent="." unique_id=730188448]
 position = Vector2(290, 442.5)
 scale = Vector2(0.9374999, 0.93749976)
 texture = ExtResource("3_esdcc")
 
+[node name="PanelContainer" type="PanelContainer" parent="bruno" unique_id=1285881911]
+offset_left = 127.499985
+offset_top = -124.999985
+offset_right = 183.49998
+offset_bottom = -84.999985
+
+[node name="Label" type="Label" parent="bruno/PanelContainer" unique_id=1212157963]
+layout_mode = 2
+theme = ExtResource("3_nloxq")
+text = "@brunardo1959"
+
 [node name="alexis" type="Sprite2D" parent="." unique_id=238324943]
 position = Vector2(375, 1302.5)
 scale = Vector2(0.9179687, 0.9375012)
 texture = ExtResource("5_s54co")
 
+[node name="PanelContainer" type="PanelContainer" parent="alexis" unique_id=307673402]
+offset_left = 127.499985
+offset_top = -124.999985
+offset_right = 183.49998
+offset_bottom = -84.999985
+
+[node name="Label" type="Label" parent="alexis/PanelContainer" unique_id=1353639099]
+layout_mode = 2
+theme = ExtResource("3_nloxq")
+text = "@TheAlezuu ツ"
+
 [node name="nahue" type="Sprite2D" parent="." unique_id=58136946]
 position = Vector2(267.5, 1029.9999)
 scale = Vector2(0.7161459, 0.63802147)
 texture = ExtResource("4_txoeq")
+
+[node name="PanelContainer" type="PanelContainer" parent="nahue" unique_id=1964889691]
+offset_left = 191.99998
+offset_top = -191.99973
+offset_right = 247.99998
+offset_bottom = -151.99973
+
+[node name="Label" type="Label" parent="nahue/PanelContainer" unique_id=311127198]
+layout_mode = 2
+theme = SubResource("Theme_0wx7t")
+text = "@tio_graso"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=651114981]
 libraries/ = SubResource("AnimationLibrary_5fn64")
@@ -355,7 +419,7 @@ text = "volver"
 offset_left = 2832.5
 offset_top = 50.0
 offset_right = 2985.5
-offset_bottom = 81.000046
+offset_bottom = 81.000015
 scale = Vector2(4.684049, 4.684049)
 text = "modo debug?"
 
