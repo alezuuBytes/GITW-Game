@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://513tt3r6a07l"]
 
-[ext_resource type="PackedScene" uid="uid://dbxu1yxy5fxyb" path="res://Escenas/mapa_2.tscn" id="1_1mu2u"]
-[ext_resource type="Script" uid="uid://doddx882bhywu" path="res://Escenas/escena_final.gd" id="1_en1d1"]
+[ext_resource type="PackedScene" path="res://Escenas/mapa_2.tscn" id="1_1mu2u"]
+[ext_resource type="Script" uid="uid://doddx882bhywu" path="res://scripts/escena_final.gd" id="1_en1d1"]
 [ext_resource type="PackedScene" uid="uid://byemaiusqtpdi" path="res://Escenas/enemigo_final.tscn" id="3_6gwht"]
 [ext_resource type="PackedScene" uid="uid://dmjj1duyjpi6y" path="res://Escenas/greg_alva.tscn" id="4_tc10d"]
 

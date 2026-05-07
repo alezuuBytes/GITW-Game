@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bmbk8s3eu6y0w"]
+
+[ext_resource type="Theme" uid="uid://s7hava87ytwj" path="res://trabajo_graso/fonts/letras.tres" id="1_tj5o3"]
+
+[node name="ganar_juego" type="Control" unique_id=1265272667]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=509434446]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 144.0
+offset_right = 569.0
+offset_bottom = 186.0
+theme = ExtResource("1_tj5o3")
+text = "GANASTEEEEEEEE"
+
+[node name="Label2" type="Label" parent="." unique_id=349282905]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 337.0
+offset_right = 569.0
+offset_bottom = 379.0
+theme = ExtResource("1_tj5o3")
+text = "introducir texto"

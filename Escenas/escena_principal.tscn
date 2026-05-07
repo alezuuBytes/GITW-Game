@@ -14,7 +14,6 @@ radius = 323.02478
 [node name="Mapa_1" parent="." unique_id=874014371 instance=ExtResource("1_pboj7")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Mapa_1" unique_id=1246098546]
-visible = false
 color = Color(0.10747976, 0.10747973, 0.10747973, 1)
 
 [node name="GregAlva" parent="." unique_id=138358149 instance=ExtResource("1_gcge2")]
