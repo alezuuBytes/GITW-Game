@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xe1d5tfjo1av"
-path="res://.godot/imported/alter.png-fce6d7f87a9cd03c15fcebd638e20337.ctex"
+uid="uid://do71t6iygpp01"
+path="res://.godot/imported/mr bean.png-a380d2cd47ce1dad839df56ef8fb91d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Creadores/alter.png"
-dest_files=["res://.godot/imported/alter.png-fce6d7f87a9cd03c15fcebd638e20337.ctex"]
+source_file="res://images/Creadores/mr bean.png"
+dest_files=["res://.godot/imported/mr bean.png-a380d2cd47ce1dad839df56ef8fb91d6.ctex"]
 
 [params]
 
